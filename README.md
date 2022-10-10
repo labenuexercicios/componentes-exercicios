@@ -29,3 +29,8 @@ Depois de criar o CardVideo, crie um componente **InfosUsuario**, que guarde uma
 
 # Exercício 3
  Após criar ambos os componentes, adicione `InfosUsuario` ao corpo do componente que guarda os cards do video. Agora, seu `App.js` deve exibir cards de vídeo iguais, que contenham também informações sobre o usuário que fez o vídeo.
+
+
+## Informações úteis sobre o assunto
+[Components (em inglês) | Geeks for Geeks](https://www.geeksforgeeks.org/reactjs-components/)
+
