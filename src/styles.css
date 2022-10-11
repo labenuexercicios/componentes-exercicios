@@ -69,6 +69,6 @@ footer {
   height: 200px;
 }
 
-h4 {
-  margin-left: 20px;
+h4, .img {
+  margin-left: 10px;
 }
