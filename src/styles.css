@@ -72,3 +72,16 @@ footer {
 h4 {
   margin-left: 20px;
 }
+
+
+#infos-usuario > img {
+  width: 20%;
+  margin-left: 40%;
+}
+
+#infos-usuario > p {
+  margin-left: 35%;
+}
+
+
+
