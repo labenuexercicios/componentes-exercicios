@@ -1,8 +1,8 @@
 import React from "react";
+import CardVideo from "./components/CardVideo";
 import "./styles.css";
 
 export default function App() {
-  const titulo = "Título do vídeo";
 
   function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
@@ -29,42 +29,34 @@ export default function App() {
 
           <section className="painel-de-videos">
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=1 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=2 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=3 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=4 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=5 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=6 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=7 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
             <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=8 " alt="" />
-              <h4>{titulo}</h4>
+              <CardVideo/>
             </div>
           </section>
         </main>
 
         <footer>
-          <h4>Oi! Eu moro no footer!</h4>
+          <h4>Eu moro no footer</h4>
         </footer>
       </div>
     </div>
