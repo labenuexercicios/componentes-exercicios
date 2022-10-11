@@ -72,3 +72,16 @@ footer {
 h4 {
   margin-left: 20px;
 }
+
+.image{
+  border-radius: 500px;
+  height: 40px;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px; 
+}
