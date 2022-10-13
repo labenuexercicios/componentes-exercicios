@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function () {
-    const titulo = "Polyana Rangel 💕";
+export default function InfosUsuarios(props) {
     return (
-        <>
-            <img src="https://picsum.photos/400/400?a=1 " alt="" />
-            <h4>{titulo}</h4>
-        </>
+        <div className="usuario">
+           
+            <img src="https://png.pngtree.com/png-vector/20190909/ourlarge/pngtree-outline-user-icon-png-image_1727916.jpg " alt="" />
+            <h4>{props.usuario}</h4>
+        </div>
     )
 }
