@@ -1,13 +1,21 @@
 import React from "react";
 import "./styles.css";
+import CardVideo from "./compoente/CardVideo";
+import { isPropertySignature } from "typescript";
 
-export default function App() {
-  const titulo = "Título do vídeo";
+
+
+export default function App(props) {
+  const titulo = "titulo do video"
 
   function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
+
   }
+
   return (
+
+
     <div>
       <div className="tela-inteira">
         <header>
@@ -26,41 +34,18 @@ export default function App() {
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
           </nav>
-
           <section className="painel-de-videos">
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=1 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=2 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=3 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=4 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=5 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=6 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=7 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=8 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
+            <CardVideo titulo="titulo 1" imagem={"https://picsum.photos/400/400?a=1"} usuario="usuario 1" />
+            <CardVideo titulo="titulo 2" imagem={"https://picsum.photos/200/300"} usuario="usuario 2" />
+            <CardVideo titulo="titulo 3" imagem={"https://picsum.photos/200"} usuario="usuario 3" />
+            <CardVideo titulo="titulo 4" imagem={"https://picsum.photos/id/237/200/300"} usuario="usuario 4" />
+            <CardVideo titulo="titulo 5" imagem={"https://picsum.photos/seed/picsum/200/300"} usuario="usuario 5" />
+            <CardVideo titulo="titulo 6" imagem={"https://picsum.photos/200/300?grayscale"} usuario="usuario 6" />
+            <CardVideo titulo="titulo 7" imagem={"https://picsum.photos/200/300/?blur"} usuario="usuario 7" />
+            <CardVideo titulo="titulo 8" imagem={"https://picsum.photos/id/870/200/300?grayscale&blur=2"} usuario="usuario 8" />
           </section>
+
+
         </main>
 
         <footer>
