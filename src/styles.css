@@ -64,23 +64,38 @@ footer {
   padding: 0 10px;
 }
 
-.box-pagina-principal > img {
-  width: 100%;
-  height: 200px;
+
+
+#infos-usuario{
+  display: flex;
 }
 
-h4 {
-  margin-left: 20px;
+#img {
+  width: 16vw;
+  height: 20vh;
+  margin-left: 2vw;
+  border-radius: 10px;
 }
 
-
-#infos-usuario > img {
-  width: 20%;
-  margin-left: 40%;
+#imagem{
+  margin-top: 0;
+  margin-bottom: 2vh;
+  display: flex;
+  width: 5vw;
+  height: 8vh;
+  padding-left: 2vw;
 }
 
-#infos-usuario > p {
-  margin-left: 35%;
+#titulo{
+  padding-left: 7vw;
+  margin-top: 0;
+}
+
+#nome{
+  margin-top: 0;
+  display: flex;
+  padding-left: 0.5vw;
+  font-size: 2vh;
 }
 
 

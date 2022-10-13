@@ -1,12 +1,11 @@
 import React from "react"
 
-export default function InfosUsuario() {
-    const nomeUsuario = "Heytor";
+export default function InfosUsuario(props) {
     
      return(
         <div id="infos-usuario">
-         <img src="https://picsum.photos/200/300" alt="" />
-         <p>{nomeUsuario}</p>
+         <img id="imagem" src={props.imagem}/>
+         <h1 id="nome">{props.nome}</h1>
         </div>
      )
 }

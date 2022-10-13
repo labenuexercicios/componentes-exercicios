@@ -5,10 +5,6 @@ import "./styles.css";
 export default function App() {
   const titulo = "Título do vídeo";
 
-  function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido");
-  }
-
   return (
     <div>
       <div className="tela-inteira">
@@ -30,14 +26,10 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
+              <CardVideo titulo={titulo} imagem="https://picsum.photos/300/300?a=1 "/>
+              <CardVideo titulo={titulo} imagem="https://picsum.photos/300/300?a=2 "/>
+              <CardVideo titulo={titulo} imagem="https://picsum.photos/300/300?a=3 "/>
+              <CardVideo titulo={titulo} imagem="https://picsum.photos/300/300?a=4 "/>
           </section>
         </main>
 
