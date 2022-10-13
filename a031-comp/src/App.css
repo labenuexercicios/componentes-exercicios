@@ -46,7 +46,7 @@ main {
 
 .box-pagina-principal {
   display: grid;
-  grid-template-rows: 3fr 1fr;
+  
   grid-template-columns: 1fr;
   border-style: solid;
   border-width: thin;

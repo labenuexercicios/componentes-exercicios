@@ -1,12 +1,14 @@
 import React from 'react';
 import logo from "./logo192.png"; //colcoar a imagem na pasta components
 
-export function Info()
+export function Info(props)
 {
     return(
     <div> 
-            <p>Autor: fulano</p>
-            <img src={logo}/>
+            <img src={props.objeto.video}/>
+            <h4>titulo: {props.objeto.titulo}</h4>
+            <p>Autor: {props.objeto.autor}</p>
+            <img src={props.objeto.imagem}/>
     </div>
     )
 }
