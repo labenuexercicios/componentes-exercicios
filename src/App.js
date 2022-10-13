@@ -4,9 +4,33 @@ import "./styles.css";
 
 export default function App() {
 
-  function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido");
+  
+  const video1 = {
+    mainTitle: "https://picsum.photos/401/400?a=7",
+    title: 'Video 1',
+    alt: 'video1',
   }
+
+  const video2 = {
+    mainTitle: "https://picsum.photos/401/400?a=8",
+    title: 'Video 2',
+    alt: 'video2',
+  }
+
+  
+  const video3 = {
+    mainTitle: "https://picsum.photos/401/400?a=9",
+    title: 'Video 3',
+    alt: 'video3'
+  }
+
+  const video4 = {
+    mainTitle: "https://picsum.photos/401/400?a=1",
+    title: 'Video 4',
+    alt: 'video4'
+  }
+
+/////////////////////////////////////////////
   return (
     <div>
       <div className="tela-inteira">
@@ -28,30 +52,10 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <CardVideo/>
-            </div>
+            <CardVideo video={video1} img={video1}/> 
+            <CardVideo video={video2} img={video2}/>
+            <CardVideo video={video3} img={video3}/>
+            <CardVideo video={video4} img={video4}/>
           </section>
         </main>
 
