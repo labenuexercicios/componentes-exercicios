@@ -37,8 +37,8 @@ main {
 .painel-de-videos {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   row-gap: 10px;
   column-gap: 10px;
   margin: 10px ; 
@@ -52,7 +52,7 @@ main {
   grid-template-columns: 1fr;
   border-style: solid;
   border-width: thin;
-  align-items: start;
+  align-items: center;
   justify-items: stretch;
 }
 

@@ -4,7 +4,10 @@ import "./styles.css";
 
 
 export default function App() {
- 
+ const dados= {
+  titulo: "Meu Filme",
+  imagem: "https://picsum.photos/400/400?a=2"
+}
 
  
   return (
@@ -26,9 +29,23 @@ export default function App() {
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
           </nav>
-
-          
-            <CardVideo/>
+          <CardVideo 
+            titulo={dados.titulo}
+            imagem={dados.imagem}
+            />          
+            <CardVideo 
+            titulo={dados.titulo}
+            imagem={dados.imagem}
+            />
+             <CardVideo 
+            titulo={dados.titulo}
+            imagem={dados.imagem}
+            />
+              <CardVideo 
+            titulo={dados.titulo}
+            imagem={dados.imagem}
+            />
+           
         
         </main>
 

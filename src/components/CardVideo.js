@@ -1,47 +1,31 @@
 import React from "react";
 import InfosUsuario from "./InfosUsuario";
- export default function () {
-    const titulo = "Título do vídeo";
-    function reproduzVideo() {
-        alert("O vídeo está sendo reproduzido");
-      }
-    return(
-        <section className="painel-de-videos">
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=2 " alt="" />
-              <h4>{titulo}</h4>
-              <InfosUsuario/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=3 " alt="" />
-              <h4>{titulo}</h4>
-              <InfosUsuario/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=4 " alt="" />
-              <h4>{titulo}</h4>
-              <InfosUsuario/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=5 " alt="" />
-              <h4>{titulo}</h4>
-              <InfosUsuario/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=6 " alt="" />
-              <h4>{titulo}</h4>
-              <InfosUsuario/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=7 " alt="" />
-              <h4>{titulo}</h4>
-              <InfosUsuario/>
-            </div>
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=8 " alt="" />
-              <h4>{titulo}</h4>
-              <InfosUsuario/>
-            </div>
-        </section>
-    )
- }
+import perfil from "../img/meliodas.jpg"
+
+export default function (props) {
+  const img = perfil
+  const autor = "David"
+  function reproduzVideo() {
+    alert("O vídeo está sendo reproduzido");
+  }
+  {/* Exercicio Props e Componentes */ }
+  return (
+    <section className="painel-de-videos">
+      <div className="box-pagina-principal" onClick={reproduzVideo}>
+         {/*Acessando Objeto*/}
+        <img src={props.imagem} alt="" />
+        <h4>{props.titulo}</h4>
+        
+
+
+        {/* Exercicio Props e Componentes */}
+        <InfosUsuario
+          autor={autor} 
+          img={img}
+        />
+      </div>
+
+
+    </section>
+  )
+}

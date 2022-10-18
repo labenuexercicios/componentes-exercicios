@@ -1,10 +1,10 @@
 import React from "react";
-import perfil from "../img/meliodas.jpg"
-export default function (){
+
+export default function (props){
     return(
         <div className="infoUsuario">
-            <img className="imgCard" src={perfil}/>
-            <p> David </p>
+            <img className="imgCard" src={props.img}/>
+            <p>{props.autor}</p>
         </div>
     )
 }
