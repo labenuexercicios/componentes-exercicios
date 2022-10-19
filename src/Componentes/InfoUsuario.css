@@ -1,0 +1,13 @@
+.container{
+    background-color: rgb(226, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+#doutor{
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}

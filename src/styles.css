@@ -44,7 +44,7 @@ main {
   margin: 10px;
 }
 
-.box-pagina-principal {
+/* .box-pagina-principal {
   display: grid;
   grid-template-rows: 3fr 1fr;
   grid-template-columns: 1fr;
@@ -52,7 +52,7 @@ main {
   border-width: thin;
   align-items: start;
   justify-items: stretch;
-}
+} */
 
 footer {
   background: #333b3e;

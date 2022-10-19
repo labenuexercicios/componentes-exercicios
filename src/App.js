@@ -1,9 +1,10 @@
 import React from "react";
 import "./styles.css";
 import CardVideo from "../src/Componentes/CardVideo"
+import InfoUsuario from "../src/Componentes/InfoUsuario"
 
 export default function App() {
-  const titulo = "Título do vídeo";
+  // const titulo = "Título do vídeo";
 
   function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
@@ -15,7 +16,7 @@ export default function App() {
           <h1>LabeTube</h1>
           <input type="text" placeholder="Busca" id="campoDeBusca" />
         </header>
-
+    
         <CardVideo/>
 
         <footer>

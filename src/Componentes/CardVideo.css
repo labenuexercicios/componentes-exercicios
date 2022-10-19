@@ -1,0 +1,8 @@
+.box-pagina-principal {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    border-width: thin;
+    border-style: solid;
+    
+  }
