@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { CardVideo } from "./Componentes/CardVideo";
+// import carro1 from
 
 export default function App() {
   // const titulo = "Título do vídeo";
@@ -8,6 +9,13 @@ export default function App() {
   // function reproduzVideo() {
   //   alert("O vídeo está sendo reproduzido");
   // }
+  // const nome = "fala doido."
+
+  const infof1 ={
+   titulo : "Titulo novo",
+   imagem: "https://i.picsum.photos/id/795/400/400.jpg?hmac=mmGHCbis-pqjssxb_bq5FPGiEmO3uKJROlzfkmfl5BE"
+  };
+
   return (
     <div>
       <div className="tela-inteira">
@@ -28,7 +36,8 @@ export default function App() {
             </ul>
           </nav>
 
-          <CardVideo/>
+          <CardVideo infof1 = {infof1}   
+          />
         </main>
 
         <footer>
