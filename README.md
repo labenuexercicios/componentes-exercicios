@@ -14,7 +14,7 @@ Vamos utilizar o LabeTube, da aula anterior, que foi transferido para um app Rea
 
 Para executar este exercício, você pode criar uma nova aplicação React, como foi visto na aula passada, ou utilizar o link abaixo para ir ao template no **CodeSandbox**. Este template para exatamente onde o exercício da última aula acaba.
 
-[**Template do CodeSandbox**](https://codesandbox.io/s/template-exercicio-componentes-5gp0bf)
+[**Template do CodeSandbox**](https://codesandbox.io/s/template-exercicio-componentes-bghm4s)
 
 Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
