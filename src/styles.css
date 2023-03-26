@@ -38,7 +38,7 @@ main {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   row-gap: 10px;
   column-gap: 10px;
   margin: 10px;
@@ -46,7 +46,7 @@ main {
 
 .box-pagina-principal {
   display: grid;
-  grid-template-rows: 3fr 1fr;
+  /* grid-template-rows: 3fr 1fr; */
   grid-template-columns: 1fr;
   border-style: solid;
   border-width: thin;
@@ -71,4 +71,12 @@ footer {
 
 h4 {
   margin-left: 20px;
+}
+
+#eu{
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
 }
