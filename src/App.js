@@ -1,14 +1,17 @@
 import React from "react";
 import "./styles.css";
+import CardVideos from "./componentes/CardVideo"
+import Footer from "./componentes/Footer"
 
 export default function App() {
-  const titulo = "Título do vídeo";
-
-  function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido");
-  }
+  /*  const titulo = "Título do vídeo";
+ 
+   function reproduzVideo() {
+     alert("O vídeo está sendo reproduzido");
+   } */
   return (
     <div>
+
       <div className="tela-inteira">
         <header>
           <h1>LabeTube</h1>
@@ -26,8 +29,14 @@ export default function App() {
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
           </nav>
-
-          <section className="painel-de-videos">
+          
+            <CardVideos />
+            <CardVideos />
+            <CardVideos />
+            <CardVideos />
+            <CardVideos />
+          
+          {/* <section className="painel-de-videos">
             <div className="box-pagina-principal" onClick={reproduzVideo}>
               <img src="https://picsum.photos/400/400?a=1 " alt="" />
               <h4>{titulo}</h4>
@@ -60,12 +69,15 @@ export default function App() {
               <img src="https://picsum.photos/400/400?a=8 " alt="" />
               <h4>{titulo}</h4>
             </div>
-          </section>
+          </section> */}
         </main>
-
-        <footer>
+          <div className="footer">
+          <Footer/>
+          </div>
+        
+        {/* <footer>
           <h4>Oi! Eu moro no footer!</h4>
-        </footer>
+        </footer> */}
       </div>
     </div>
   );
