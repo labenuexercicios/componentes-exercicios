@@ -3,6 +3,13 @@ import "./styles.css";
 import CardVideo from "./Componentes/CardVideo/CardVideo";
 
 export default function App() {
+  const infoCardVideo = {
+    imagem:"https://picsum.photos/400/400?a=1",
+    titulo: "Lagoa Azul",
+    usuario:"Augusto"
+  }
+ 
+
   
   return (
     <div>
@@ -25,14 +32,12 @@ export default function App() {
           </nav>
           <section className="painel-de-videos">
           
-          <CardVideo/>
-          <CardVideo/>
-          <CardVideo/>
-          <CardVideo/>
-          <CardVideo/>
-          <CardVideo/>
-          <CardVideo/>
-          <CardVideo/>
+          <CardVideo infoCardVideo={infoCardVideo}/>
+          <CardVideo infoCardVideo={infoCardVideo}/>
+          <CardVideo infoCardVideo={infoCardVideo}/>
+          <CardVideo infoCardVideo={infoCardVideo}/>
+          <CardVideo infoCardVideo={infoCardVideo}/>
+        
             
           </section>
         </main>
