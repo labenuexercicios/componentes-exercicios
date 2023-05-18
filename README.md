@@ -1,6 +1,6 @@
 # Componentes - Exercício
 
-Caso não lembre como funciona o processo de entrega, clique [**aqui**](https://github.com/labenuexercicios/instrucoes-entrega)
+Caso não lembre como funciona o processo de entrega, clique [**aqui**](httnpps://github.com/labenuexercicios/instrucoes-entrega)
 
 ## O que você precisa saber e praticar desta aula?
 1. Criação de componentes no React;
