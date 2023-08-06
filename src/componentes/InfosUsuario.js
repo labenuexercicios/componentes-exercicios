@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../imagens/foto1.jpg'
 
 
 export default function InfosUsuario() {
@@ -10,7 +10,7 @@ export default function InfosUsuario() {
   return(
     <>
       <div className="info-usuario"> 
-        <img className="imagem" src="https://picsum.photos/400/400?a=1 " />
+        <img className="imagem" src="foto2.jpg"/>
         <p>Nome do usuário: {nomeDoUsuario}</p>
       </div>
     </>
