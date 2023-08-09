@@ -5,7 +5,7 @@ body {
 }
 
 .tela-inteira {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +21,7 @@ header {
 
 
 main {
-  min-height: 80%;
+  min-height: 150%;
   display: flex;
 }
 
@@ -35,8 +35,8 @@ main {
 }
 
 .info-usuario img{
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
   border-radius:  10%;
 }
 

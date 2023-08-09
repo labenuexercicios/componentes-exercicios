@@ -1,17 +1,12 @@
 import React from "react";
-import '../imagens/foto1.jpg'
 
-
-export default function InfosUsuario() {
-  const nomeDoUsuario = "Simone"
-
-
-
+export default function InfosUsuario(props) {
+  
   return(
     <>
       <div className="info-usuario"> 
-        <img className="imagem" src="foto2.jpg"/>
-        <p>Nome do usuário: {nomeDoUsuario}</p>
+        <img className="imagem" src={props.imagemUsuario}/>
+        <p>Nome do usuário: {props.nomeDoUsuario}</p>
       </div>
     </>
   )
