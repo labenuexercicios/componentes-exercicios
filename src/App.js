@@ -12,7 +12,7 @@ export default function App() {
       <div className="tela-inteira">
         <header>
           <h1>LabeTube</h1>
-          <input type="text" placeholder="Busca" id="campoDeBusca" />
+          <input type="text" placeholder="Pesquisar" id="campoDeBusca" />
         </header>
 
         <main>
@@ -62,9 +62,9 @@ export default function App() {
             </div>
           </section>
         </main>
-
+         
         <footer>
-          <h4>Oi! Eu moro no footer!</h4>
+          <h4>Copyright © 2022 Labenu All rights reserved.</h4>
         </footer>
       </div>
     </div>
