@@ -79,6 +79,15 @@ margin: 10px 0px ;
  
 }
 
+.Info{
+  width: 3vw;
+  align-items: center;
+}
+
+.Info-img{
+ 
+ padding-left: 50px;
+}
 
 
 .box-pagina-principal > img {
