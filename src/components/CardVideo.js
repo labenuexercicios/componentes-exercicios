@@ -1,8 +1,10 @@
 import react from "react";
 import InfosUsuarios from "./InfosUsuarios";
 
+import { DivCard, SectionCard } from "./styled";
 
-export default function CardVideo() {
+
+export default function CardVideo(props) {
     const titulo = "Título do vídeo";
 
     function reproduzVideo() {
@@ -11,15 +13,17 @@ export default function CardVideo() {
 
     return (
      <div>
-          <section className="painel-de-videos">
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
-              <img src="https://picsum.photos/400/400?a=1 " alt="" />
-              <h4>{titulo}</h4>
-            </div>
-        
-          </section>
+          <SectionCard className="painel-de-videos">
+            <DivCard className="box-pagina-principal" onClick={reproduzVideo}>
 
-          <InfosUsuarios />
+              <img src={props.imagem} alt="" />
+              <h4>{props.titulo}</h4>
+              <InfosUsuarios />
+            </DivCard>
+        
+          </SectionCard>
+
+       
           
       </div>
     );

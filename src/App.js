@@ -1,24 +1,32 @@
 import React from "react";
 import "./styles.css";
 import InfosUsuarios from "./components/InfosUsuarios";
+import { GlobalStyle } from "./components/GlobalStyle";
 import CardVideo from "./components/CardVideo";
+import { DivTelaToda, HeaderCard, MainCard, NavCard } from "./components/styled";
+
 
 export default function App() {
   const titulo = "Título do vídeo";
+
+  const infoVideo = {
+    imagem:  "https://picsum.photos/400/400?a=1" ,
+    titulo: titulo
+  }
 
   function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
   }
   return (
     <div>
-      <div className="tela-inteira">
-        <header>
+      <DivTelaToda className="tela-inteira">
+        <HeaderCard>
           <h1>LabeTube</h1>
           <input type="text" placeholder="Pesquisar" id="campoDeBusca" />
-        </header>
+        </HeaderCard>
 
-        <main>
-          <nav className="menu-vertical">
+        <MainCard>
+          <NavCard className="menu-vertical">
             <ul>
               <li className="botoes-meunu-vertical">Início</li>
               <li className="botoes-meunu-vertical">Em alta</li>
@@ -27,26 +35,26 @@ export default function App() {
               <li className="botoes-meunu-vertical">Originais</li>
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
-          </nav>
+          </NavCard>
 
           <section className="painel-de-videos">
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
+            <CardVideo imagem={infoVideo.imagem} titulo={infoVideo.titulo} />
             
           </section>
       
-        </main>
+        </MainCard>
          
         <footer>
           <h4>Copyright © 2022 Labenu All rights reserved.</h4>
         </footer>
-      </div>
+      </DivTelaToda>
     </div>
   );
 }
